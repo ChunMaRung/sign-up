@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 웨퍼 */
+.wrapper {
+  width: 540px;
+  height: 960px;
+  background: #ffffff;
+  border: 1px solid #aacdff;
+  box-shadow: 7px 7px 39px rgba(0, 104, 255, 0.25);
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+}
+
+h1 {
+  width: 380px; /*너비지정해야 왼쪽에 감 */
+  font-weight: bold;
+  font-size: 32px;
+  color: #0068ff;
+  margin-bottom: 40px;
+}
+
+/* 유저정보 */
+.inputbox {
+  width: 380px;
+  height: 60px;
+  background: #ffffff;
+  border: 1px solid #0068ff;
+  border-radius: 7px;
+  margin-top: 15px;
+}
+
+.inputbox::placeholder {
+  font-size: 16px;
+  color: #797979;
+}
+
+/* 휴대번호 */
+.phone__wrapper {
+  margin-top: 15px;
+  display: flex;
+  width: 380px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.phone {
+  width: 100px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #d2d2d2;
+  border-radius: 7px;
+}
+
+.call__wrapper,
+.time__wrapper {
+  width: 380px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.call__number,
+.time__class {
+  font-size: 18px;
+  color: #0068ff;
+  margin-right: 22px;
+  text-align: center;
+}
+
+#call__number__button {
+  width: 120px;
+  height: 40px;
+  border-radius: 7px;
+  margin-left: 20px;
+  border: 1px solid #d2d2d2;
+  font-size: 16px;
+}
+
+#time__button {
+  width: 120px;
+  height: 40px;
+  border-radius: 7px;
+  margin-left: 20px;
+  border: 1px solid #d2d2d2;
+  font-size: 16px;
+}
+
+/* 지역 */
+select {
+  width: 380px;
+  height: 60px;
+  background: #ffffff;
+  border: 1px solid #d2d2d2;
+  border-radius: 7px;
+
+  font-size: 16px;
+  color: #797979;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#error__location {
+  margin-bottom: 30px;
+}
+
+.gender__radio {
+  width: 380px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.gender_class {
+  width: 70px;
+  text-align: center;
+}
+
+.Line {
+  margin-top: 10px;
+  width: 100%;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+#submit {
+  margin-top: 25px;
+  width: 380px;
+  height: 75px;
+  border: 1px solid #d2d2d2;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.error {
+  font-size: 8px;
+  text-align: center;
+  color: red;
+}

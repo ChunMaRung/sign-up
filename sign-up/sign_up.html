@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>회원가입</title>
+    <script src="./sign_up.js"></script>
+    <link href="./sign_up.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>회원가입</h1>
+      <!-- 유저정보 -->
+      <input
+        type="text"
+        class="inputbox"
+        id="id_email"
+        placeholder="이메일을 입력해 주세요."
+      />
+      <div id="error__email" class="error"></div>
+      <input
+        type="text"
+        class="inputbox"
+        id="id_name"
+        placeholder="이름을 입력해 주세요."
+      />
+      <div id="error__name" class="error"></div>
+      <input
+        type="password"
+        class="inputbox"
+        id="id_pw1"
+        placeholder="비밀번호를 입력해 주세요."
+      />
+      <div id="error__pw1" class="error"></div>
+      <input
+        type="password"
+        class="inputbox"
+        id="id_pw2"
+        placeholder="비밀번호를 다시 입력해 주세요."
+      />
+      <div id="error__pw2" class="error"></div>
+
+      <!-- 휴대번호 -->
+      <div class="phone__wrapper">
+        <input
+          type="text"
+          class="phone"
+          id="id_phone1"
+          maxlength="3"
+          oninput="PhoneFocus1()"
+        />ㅡ
+        <input
+          type="text"
+          class="phone"
+          id="id_phone2"
+          maxlength="4"
+          oninput="PhoneFocus2()"
+        />ㅡ
+        <input
+          type="text"
+          class="phone"
+          id="id_phone3"
+          oninput="PhoneFocus3()"
+          maxlength="4"
+        />
+      </div>
+
+      <div class="call__wrapper">
+        <span id="call__number__id" class="call__number">000000</span>
+        <button id="call__number__button" onclick="CallNumber()" disabled>
+          인증번호 전송
+        </button>
+      </div>
+
+      <div class="time__wrapper">
+        <span id="time__id" class="time__class">3:00</span>
+        <button id="time__button" onclick="Confirm()" disabled>
+          인증 확인
+        </button>
+      </div>
+
+      <!-- 지역 -->
+      <select id="id_location">
+        <option disabled selected>지역을 선택하세요.</option>
+        <option>서울</option>
+        <option>경기</option>
+        <option>인천</option>
+      </select>
+      <div id="error__location" class="error"></div>
+
+      <!-- 성별 -->
+      <div class="gender__radio">
+        <div class="gender_class">
+          <input type="radio" name="gender__name" id="man" />남자
+        </div>
+        <div class="gender_class">
+          <input type="radio" name="gender__name" id="woman" />여자
+        </div>
+      </div>
+      <div id="error__gender" class="error"></div>
+
+      <div class="Line"></div>
+      <button id="submit" onclick="submit()" disabled>가입하기</button>
+    </div>
+  </body>
+</html>
